@@ -12,11 +12,11 @@ namespace ConsoleApp1
         {
             string inputString = Console.ReadLine();
 
-            int inputNumber = int.Parse(inputString);
+            int.TryParse(inputString, out int number);
 
-            string strBin = Convert.ToString(inputNumber, 2);
+            string strBinary = Convert.ToString(number, 2);
 
-            Console.WriteLine($"To Binary : {strBin}");
+            Console.WriteLine($"To Binary : {strBinary}");
 
             Console.ReadKey();
         }
