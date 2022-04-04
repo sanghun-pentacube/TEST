@@ -10,7 +10,13 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello");
+            string inputString = Console.ReadLine();
+
+            int inputNumber = int.Parse(inputString);
+
+            string strBin = Convert.ToString(inputNumber, 2);
+
+            Console.WriteLine($"To Binary : {strBin}");
 
             Console.ReadKey();
         }
